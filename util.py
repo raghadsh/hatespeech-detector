@@ -120,10 +120,10 @@ class MyStreamListener(tweepy.StreamListener):
 class DataStreamer:
     
     def __init__(self):
-        self.consumer_key = 'iv9fgInq9KtsGYkGpHYDsIl0E'
-        self.consumer_secret = 'vjLoyMjRi8AVdtqstkitQcdQoEBLDjrFdkCBNdYE3G31ZX603Y'
-        self.access_token = '113729650-uIF1Mr1RnQFS5SVvrZSygdb3yoCiDgFMd6Ipe1aL'
-        self.access_token_secret = 'QhBGXLWhbIAQSDmfaEkt3s6sF9aDLGhksOS0XuBWVCFFe'
+        self.consumer_key = ''
+        self.consumer_secret = ''
+        self.access_token = ''
+        self.access_token_secret = ''
         self.auth = tweepy.OAuthHandler(self.consumer_key, self.consumer_secret)
         self.auth.set_access_token(self.access_token, self.access_token_secret)
         self.api = tweepy.API(self.auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
